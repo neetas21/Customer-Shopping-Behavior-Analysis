@@ -1,72 +1,20 @@
-# Customer Shopping Behavior Analysis
-
-## Project Overview
-This project analyzes retail customer shopping behavior using **Python and MySQL** to derive structured business insights from transactional data.
-
-The workflow includes:
-- Data cleaning and preprocessing  
-- Feature engineering  
-- Exploratory Data Analysis (EDA)  
-- Database integration with MySQL  
-- SQL-based querying for business insights  
-
 ---
+## Dashboard: Customer Behavior Analysis (Power BI)
 
-## Objectives
-- Transform raw customer data into an analysis-ready dataset  
-- Standardize column names using snake_case convention  
-- Engineer behavioral features (age segmentation, purchase frequency conversion)  
-- Load processed data into MySQL  
-- Execute SQL queries for structured business analysis  
+An interactive Power BI dashboard was built on top of the processed dataset to surface key customer behavior metrics at a glance.
 
----
+**KPIs tracked:**
+- Number of Customers: 3.9K
+- Average Purchase Amount: $59.76
+- Average Review Rating: 3.75
 
-## Technology Stack
-- Python (Pandas, NumPy)
-- MySQL
-- SQLAlchemy
-- Jupyter Notebook
-- Git & GitHub
+**Visuals included:**
+- % of Customers by Subscription Status (donut chart)
+- Revenue & Sales by Category (bar charts)
+- Revenue & Sales by Age Group (horizontal bar charts)
 
----
+**Filters available:** Subscription Status, Gender, Category, Shipping Type
 
-## Key Transformations
-- Converted column names to snake_case
-- Created `age_group` using quantile-based segmentation
-- Converted categorical purchase frequency into numeric days (`purchase_frequency_days`)
-- Cleaned and structured dataset for relational database storage
-- Exported processed dataset to MySQL
-- Wrote SQL queries for validation and analysis
+![Dashboard Preview](./assets/customer_behavior_dashboard.png)
 
----
-
-## Repository Structure
-
-```
-data_analytics_project/
-├── data/
-│   └── customer_shopping_behavior.csv
-├── Customer_Shopping_Behavior_Analysis.ipynb
-├── customer_behavior_sql_queries.sql
-├── README.md
-└── LICENSE
-
-```
-
-
-
----
-
-## Key Outcomes
-- Prepared structured and analysis-ready dataset  
-- Implemented feature engineering for customer segmentation  
-- Integrated Python-based processing with SQL-based storage  
-- Established reproducible data analytics workflow  
-
----
-
-## Future Enhancements
-- Advanced visualizations (Matplotlib / Seaborn)
-- Customer segmentation using clustering
-- Dashboard integration (Power BI / Tableau)
-- Deployment using Streamlit
+**Key finding:** Clothing leads across both revenue and sales volume, while Young Adult and Middle-aged segments drive the highest overall spend — suggesting these categories/segments are priority areas for targeted marketing and inventory planning.
